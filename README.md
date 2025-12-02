@@ -1,6 +1,6 @@
 # Claude Code Compression Proxy
 
-Proxy for Claude Code (VS Code) that compresses context using LLMLingua-2 (~50% reduction).
+Proxy for Claude Code (VS Code) that compresses context using LLMLingua-2 (~15-50% reduction).
 
 ## Requirements
 
@@ -10,8 +10,8 @@ Proxy for Claude Code (VS Code) that compresses context using LLMLingua-2 (~50% 
 ## Installation
 
 ```bash
-git clone <repo>
-cd claude-code-proxy
+git clone git@github.com:developerby/coderoxy.git
+cd coderoxy
 
 uv sync
 ```
@@ -45,7 +45,6 @@ In `proxy.py`:
 ```python
 MIN_CHARS = 1000        # minimum chars to trigger compression
 COMPRESSION_RATE = 0.5  # compression rate (0.5 = 50%)
-device_map = "mps"      # mps (Apple Silicon) / cpu / cuda
 ```
 
 ## Output
